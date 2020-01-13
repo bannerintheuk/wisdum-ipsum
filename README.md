@@ -1,29 +1,15 @@
-# wisdum-ipsum-app
+# Wisdum-Ipsum
 
-## Project setup
-```
-npm install
-```
+A Loremm Ipsum generator for those seeking enlightenment
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+##### [Live App](https://cli.vuejs.org/config/)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+###Dev Stack
 
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
+#### Vue
 
-### Lints and fixes files
-```
-npm run lint
-```
+#### Overmind JS
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### Firebase
+
+#### Cypress
