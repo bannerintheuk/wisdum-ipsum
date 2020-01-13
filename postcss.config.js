@@ -1,7 +1,11 @@
+const tailwindcss = require("tailwindcss");
+const autoprefixer = require("autoprefixer");
 module.exports = {
-  plugins: {
-    tailwindcss: "tailwind.config.js",
-    "@fullhuman/postcss-purgecss": process.env.NODE_ENV === "production",
-    autoprefixer: {}
-  }
+  plugins: [
+    tailwindcss("./tailwind.config.js"),
+    autoprefixer({
+      add: true,
+      grid: true
+    })
+  ]
 };
