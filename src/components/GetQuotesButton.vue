@@ -1,6 +1,7 @@
 <template>
-  <div class="h-8 mt-2">
+  <div id="GetQuotesButtonWrapper" class="h-8 mt-2">
     <button
+      id="GetQuotesButton"
       :disabled="state.fetching"
       @click="actions.getQuotes()"
       class="btn bg-green-900 focus:outline-none"

@@ -11,4 +11,11 @@ const overmind = createOvermind({
   state
 });
 
+if (window.Cypress) {
+  window.overmind = overmind;
+  if (window.Cypress.setOvermind) {
+    window.Cypress.setOvermind(overmind);
+  }
+}
+
 export const OvermindPlugin = createPlugin(overmind);

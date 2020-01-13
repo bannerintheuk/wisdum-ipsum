@@ -1,7 +1,7 @@
 <template>
   <div class="sidebar h-full bgOpaque p-4 rounded">
     <div class="my-4"></div>
-    <div class="text-xl">Paragraphs</div>
+    <div id="paragraphsSectionHeader" class="text-xl">Paragraphs</div>
     <MinWords />
     <NumberParagraphs />
     <Wrap />
@@ -9,7 +9,7 @@
     <GetTextButton />
     <CopyTextButton />
     <div class="h-4 border-b-2 border-gray-500"></div>
-    <div class="text-xl">Quotes</div>
+    <div id="quotesSectionHeader" class="text-xl">Quotes</div>
     <NumberQuotes />
     <GetQuotesButton />
     <CopyQuotesButton />

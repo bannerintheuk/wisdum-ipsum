@@ -1,6 +1,7 @@
 <template>
-  <div class="h-8 pb-2">
+  <div id="CopyTextButtonWrapper" class="h-8 pb-2">
     <button
+      id="CopyTextButton"
       v-if="!state.fetching && state.text.length > 0"
       v-clipboard="state.text"
       v-clipboard:success="actions.textClipboardHandler"

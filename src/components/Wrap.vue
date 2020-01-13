@@ -1,16 +1,16 @@
 <template>
-  <div class="flex flex-col pb-2">
-    <label for="wrap" class="text-sm">Wrap with?</label>
+  <div id="WrapWrapper" class="flex flex-col pb-2">
+    <div for="wrap" class="text-sm">Wrap with?</div>
     <div class="flex items-center py-1">
       <input
         class="ml-4 mr-2"
-        id="paragraph"
-        name="paragraph"
+        id="noWrap"
+        name="noWrap"
         type="checkbox"
         @change="actions.checked(null)"
         :checked="state.tag === null"
       />
-      <label for="paragraph" class="text-sm flex">nothing</label>
+      <label for="noWrap" class="text-sm flex">nothing</label>
     </div>
     <div class="flex items-center py-1">
       <input

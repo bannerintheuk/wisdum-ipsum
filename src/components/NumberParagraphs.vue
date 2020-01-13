@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col pb-2">
+  <div id="numberParagraphsWrapper" class="flex flex-col pb-2">
     <label for="numberParagraphs" class="text-sm">Number of Paragraphs</label>
     <input
       @input="actions.numberParagraphsChanged($event.target.value)"
@@ -11,8 +11,9 @@
       id="numberParagraphs"
       name="numberParagraphs"
       type="number"
-    /></div
-></template>
+    />
+  </div>
+</template>
 
 <script>
 export default {

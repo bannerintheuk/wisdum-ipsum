@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col pb-2">
+  <div id="minWordsWrapper" class="flex flex-col pb-2">
     <label for="minWords" class="text-sm">Min word count</label>
     <input
       @input="actions.minWordsChanged($event.target.value)"

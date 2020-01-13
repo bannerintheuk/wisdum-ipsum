@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col pb-2">
+  <div id="numberQuotesWrapper" class="flex flex-col pb-2">
     <label for="numberOfQuotes" class="text-sm">Number of quotes</label>
     <input
       placeholder="3"
