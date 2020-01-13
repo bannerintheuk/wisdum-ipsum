@@ -4,7 +4,7 @@ A Loremm Ipsum generator for those seeking enlightenment
 
 ##### [Live App](https://cli.vuejs.org/config/)
 
-###Dev Stack
+### Dev Stack
 
 #### Vue
 
