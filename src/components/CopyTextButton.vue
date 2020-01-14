@@ -4,7 +4,7 @@
       id="CopyTextButton"
       v-if="!state.fetching && state.text.length > 0"
       v-clipboard="state.text"
-      v-clipboard:success="actions.textClipboardHandler"
+      @click="actions.textClipboardHandler"
       :class="[state.textCopyBtnClass]"
       class="btn focus:outline-none"
     >

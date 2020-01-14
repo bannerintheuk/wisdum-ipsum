@@ -66,7 +66,7 @@ export const textClipboardHandler = pipe(
     state.textCopyBtnClass = "bg-orange-600";
     return;
   }),
-  wait(1500),
+  wait(3000),
   mutate(async function changeTextCopyBtnTextAndClass({ state }) {
     state.textCopyBtnText = "Copy to Clipboard";
     state.textCopyBtnClass = "bg-blue-600";
@@ -74,12 +74,16 @@ export const textClipboardHandler = pipe(
   })
 );
 
-export const quoteClipboardHandler = ({ state }) => {
-  state.quoteCopyBtnText = "Copied to Clipboard!";
-  state.quoteCopyBtnClass = "bg-orange-600";
-
-  setTimeout(() => {
-    state.quoteCopyBtnText = "Copy to Clipboard";
-    state.quoteCopyBtnClass = "bg-blue-600";
-  }, 1500);
-};
+export const quoteClipboardHandler = pipe(
+  mutate(async function changeTextCopyBtnTextAndClass({ state }) {
+    state.textCopyBtnText = "Copied to Clipboard!";
+    state.textCopyBtnClass = "bg-orange-600";
+    return;
+  }),
+  wait(3000),
+  mutate(async function changeTextCopyBtnTextAndClass({ state }) {
+    state.textCopyBtnText = "Copy to Clipboard";
+    state.textCopyBtnClass = "bg-blue-600";
+    return;
+  })
+);

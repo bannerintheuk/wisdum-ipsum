@@ -3,12 +3,14 @@
     class="content w-full ml-4 p-4 h-full flex flex-col justify-center items-center bgOpaque rounded"
   >
     <img
+      id="fetchingGif"
       alt="Thinking related Gif"
       class="w-full"
       :src="state.imageUrl"
       v-if="state.fetching"
     />
     <img
+      id="contentGif"
       alt="Game of Thrones wisdom Gif"
       class="w-full"
       src="/images/wisdom.webp"
@@ -22,11 +24,13 @@
       :value="state.quotes"
     />
     <textarea
+      id="noWrapText"
       v-if="!state.fetching && !state.wrap && state.text.length > 0"
       class="bgTransparent rounded text-sm flex-1 w-full h-full p-4 overflow-y-scroll resize-none"
       :value="state.text"
     />
     <div
+      id="wrappedText"
       v-html="state.text"
       v-if="!state.fetching && state.wrap && state.text.length > 0"
       class="text-wrapper rounded bgTransparent text-sm flex-1 w-full h-full p-4 overflow-y-scroll resize-none"
